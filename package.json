@@ -1,0 +1,13 @@
+{
+  "name": "potolki-na-veka-landing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-static.mjs",
+    "check:content": "node scripts/check-content.mjs",
+    "start": "python3 -m http.server 4173 --directory dist",
+    "check:seo-source": "node scripts/check-seo-source.mjs",
+    "check": "npm run build && npm run check:content && npm run check:seo-source"
+  }
+}
